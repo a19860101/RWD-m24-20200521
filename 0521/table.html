@@ -8,25 +8,58 @@
 <body>
     <table border="1" width="600" height="400">
         <tr>
-            <th>1</th>
+            <th rowspan="4">1</th>
             <th>2</th>
             <th>3</th>
         </tr>
         <tr>
-            <th>4</th>
+            <!-- <th>4</th> -->
             <td>5</td>
             <td>6</td>
         </tr>
         <tr>
-            <th>7</th>
+            <!-- <th>7</th> -->
             <td>8</td>
             <td>9</td>
         </tr>
         <tr>
-            <th>a</th>
+            <!-- <th>a</th> -->
             <td>b</td>
             <td>c</td>
         </tr>
+    </table>
+    <table border="1" width="600" height="400">
+        <thead>
+            <tr>
+                <th>head 1</th>
+                <th>head 2</th>
+                <th>head 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td>
+                <!-- <td>C</td> -->
+            </tr>
+            <tr>
+                <td rowspan="2">D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <!-- <td>G</td> -->
+                <td>H</td>
+                <td>I</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>foot 1</td>
+                <td>foot 2</td>
+                <td>foot 3</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
