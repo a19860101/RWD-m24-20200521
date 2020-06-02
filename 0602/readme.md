@@ -110,3 +110,23 @@ background-attachment: fixed ;
 * cover - 等比例填滿內容
 ***
 ***
+### 清單相關樣式
+#### list-style---清單樣式
+* none
+* disc
+* circle
+* square
+* decimal
+* upper-alpha
+* lower-alpha
+* upper-roman
+* lower-roman
+* cjk-ideographic
+* hiragana
+* katakana
+* lower-greek
+* armenian
+* georgian
+* hebrew
+***
+***
