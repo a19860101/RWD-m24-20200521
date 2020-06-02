@@ -48,6 +48,13 @@ p {
 	color: yellow;
 }
 ```
+#### 萬用選取器 * 
+預設套用在網頁的所有元素
+```css
+* {
+	font-family: "Segoe UI";
+}
+```
 ### CSS 權重
 當CSS發生衝突時，CSS會以權重去做區分。CSS影響的範圍愈小，權重就越重，權重越重，優先順序越高。
 在預設的狀態下，權重大小：ID > CLASS > TAG
@@ -122,7 +129,7 @@ font-family: 字體名稱 ;
 * bold
 * 100-900
 * normal
-
+***
 ####  font-style --- 斜體字
 >快速鍵:fs
 > 
