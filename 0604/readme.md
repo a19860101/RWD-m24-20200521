@@ -92,6 +92,17 @@ margin:10px 30px;           /*上下10px,左右30px*/
 margin:10px 30px 0px;       /*上10px,左右30px,下0px*/
 margin:10px 30px 0px 20px;  /*上10px,右30px,下0px,左20px*/
 ```
+#### 區塊置中
+預設狀態下，區塊右邊剩餘的空間都是margin，預設為margin-right: auto，在這邊auto可以視為自動填滿margin；若將margin-left設定為auto時，則變成左邊填滿，區塊就會移到右邊；左右同時設定auto，區塊就會置中。
+```css
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    /* 也可寫成 */
+    margin: auto;
+}
+```
+
 ***
 #### block與inline的差異
 ##### block
@@ -128,6 +139,14 @@ margin:10px 30px 0px 20px;  /*上10px,右30px,下0px,左20px*/
 
 ##### 產生的問題
 1. inline-block之間會有一個約4像素間距
-> 解決方式：將父元素的font-size設定為0，再將本身的font-size還原。若區塊中沒有文字需求可省略。
-2. 若文字數量不同，會造成區塊不等高。
-> 解決方式：設定vertical-align 或 overflow
+> 解決方式：將父元素的font-size設定為0，
+2. 文字會消失
+> 解決方式：將元素本體的font-size還原。若區塊中沒有文字需求可省略。 
+3. 預設的垂直對齊方式為baseline，區塊對齊在下方。
+> 解決方式：設定vertical-align
+#### vertical-align 垂直對齊
+元素垂直對齊的方式，只對inline-block、table內元素有效
+* baseline
+* top
+* middle
+* bottom
