@@ -114,3 +114,11 @@ margin:10px 30px 0px 20px;  /*上10px,右30px,下0px,左20px*/
 * flex
 * inline-flex
 * grid 
+
+#### box-sizing
+元素在預設的狀態時，總寬度=width+border+padding、總高度=height+border+padding，設定box-sizing之後不管padding與border設定多少，寬度依然保持原始的值
+```css
+* {
+    box-sizing: border-box;
+}
+```
