@@ -122,3 +122,12 @@ margin:10px 30px 0px 20px;  /*上10px,右30px,下0px,左20px*/
     box-sizing: border-box;
 }
 ```
+
+#### inline-block
+行內區塊。讓元素保有行內與區塊的特性
+
+##### 產生的問題
+1. inline-block之間會有一個約4像素間距
+> 解決方式：將父元素的font-size設定為0，再將本身的font-size還原。若區塊中沒有文字需求可省略。
+2. 若文字數量不同，會造成區塊不等高。
+> 解決方式：設定vertical-align 或 overflow
