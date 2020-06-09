@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+        .clearfix::after {
+            content:"";
+            display: block;
+            clear:both;
+        }
+        .box {
+            float: left;
+            width: calc(100% / 2);
+            padding: 5px;
+        }
+        .big {
+            float: left;
+            width: calc(100% / 3 * 2);
+            padding: 5px;
+        }
+        .small {
+            float: left;
+            width: calc(100% / 3 * 1);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="box">
+            <img src="images/001.png" alt="">
+        </div>
+        <div class="box">
+            <img src="images/002.png" alt="">
+        </div>
+    </div>
+    <div class="container clearfix">
+        <div class="big">
+            <img src="https://picsum.photos/id/69/800/350" alt="">
+        </div>
+        <div class="small">
+            <img src="https://picsum.photos/id/169/400/350" alt="">
+        </div>
+    </div>
+    <div class="container clearfix">
+        <div class="small">
+            <img src="https://picsum.photos/id/19/400/350" alt="">
+        </div>
+        <div class="big">
+            <img src="https://picsum.photos/id/49/800/350" alt="">
+        </div>
+        
+    </div>
+</body>
+</html>
