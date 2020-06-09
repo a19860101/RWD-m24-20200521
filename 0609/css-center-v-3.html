@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 400px;
+            background-color: #aaa;
+
+            /* font-size: 0; */
+            text-align: center;
+        }
+        /* .box {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+        } */
+        /* .container::after {
+            content:"";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        } */
+        .vam {
+            font-size: 0;
+        }
+        /*後代選取*/
+        .vam * {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+        }
+        .vam::after {
+            content:"";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+
+        .wrapper {
+            background-color: #159;
+            width: 800px;
+            height: 400px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container vam">
+        <div class="box">
+            <h1>title</h1>
+        </div>
+    </div>
+    <div class="wrapper vam">
+        <div class="title">
+            asdfasdf
+        </div>
+    </div>
+</body>
+</html>
