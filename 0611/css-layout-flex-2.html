@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Segoe UI";
+        }
+        .container {
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            background-color: #bbb;
+            flex-wrap: wrap;
+        }
+        .box {
+            padding: 15px;
+            /* width: calc(100% / 5); */
+            /* flex-basis: calc(100% / 2); */
+            /* flex-grow, flex-shrink */
+            flex: 0 0 calc(100% / 2);
+            /* 
+                flex: [flex-grow] [flex-shrink] [flex-basis]
+             */
+        }
+        .box:nth-of-type(1){
+            background-color: #eb6383;
+            /* flex-grow: 0; */
+            /* 預設關閉 0*/
+
+            /* flex-shrink: 0; */
+            /* 預設開啟 1 */
+        }
+        .box:nth-of-type(2){
+            background-color: #b4f2e1;
+            /* flex-grow: 0; */
+            /* flex-shrink: 0; */
+        }
+        .box:nth-of-type(3){
+            background-color: #ffe9c5;
+            /* flex-grow: 0; */
+            /* flex-shrink: 0; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quasi soluta eum, quia sunt laudantium excepturi, quas illo cumque ex, aliquid molestiae voluptatem aspernatur ipsa dignissimos iure. Delectus, repellat voluptates?</p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quasi soluta eum, quia sunt laudantium excepturi, quas illo cumque ex, aliquid molestiae voluptatem aspernatur ipsa dignissimos iure. Delectus, repellat voluptates?</p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quasi soluta eum, quia sunt laudantium excepturi, quas illo cumque ex, aliquid molestiae voluptatem aspernatur ipsa dignissimos iure. Delectus, repellat voluptates?</p>
+        </div>
+
+    </div>
+</body>
+</html>
