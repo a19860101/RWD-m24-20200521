@@ -37,6 +37,8 @@ header h1 span {
 }
 header p {
     font-size: 18px;
+    padding: 30px 0;
+    letter-spacing: 3px;
 }
 header .btn {
     display: inline-block;
@@ -44,4 +46,13 @@ header .btn {
     border: 2px solid #fff;
     padding: 12px 25px;
     border-radius: 50px;
+    letter-spacing: 3px;
+    transition: .3s;
+}
+header .btn:hover {
+    background-color: #fff;
+    color: #111;
+}
+header .content {
+    padding-bottom: 80px;
 }
