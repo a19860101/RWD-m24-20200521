@@ -33,6 +33,7 @@ header {
     text-align: center;
 
     color: #fff;
+    border-bottom: 6px solid #fff;
 }
 header h1 {
     font-weight: 100;
@@ -60,4 +61,32 @@ header .btn:hover {
 }
 header .content {
     padding-bottom: 80px;
+}
+/* campaign */
+#campaign {
+    text-align: center;
+}
+#campaign .left {
+    background: url("../images/campaign-1.png")no-repeat center center;
+    height: 400px;
+    background-size: cover;
+    border-width: 0 3px 6px;
+    border-color: #fff;
+    border-style: solid; 
+}
+#campaign .center {
+    background: url("../images/campaign-2.png")no-repeat center center;
+    height: 400px;
+    background-size: cover;
+    border-width: 0 3px 6px;
+    border-color: #fff;
+    border-style: solid;
+}
+#campaign .right {
+    background: url("../images/campaign-3.png")no-repeat center center;
+    height: 400px;
+    background-size: cover;
+    border-width: 0 3px 6px;
+    border-color: #fff;
+    border-style: solid;
 }
