@@ -1,5 +1,10 @@
 /* nav */
 nav {
+    background: transparent;
+    position: fixed;
+    transition: .3s;
+}
+nav:hover{
     background: #000;
 }
 nav a {
