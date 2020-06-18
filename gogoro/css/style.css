@@ -223,3 +223,19 @@ header .content {
     background-color: #888888;
     margin-left: 50px;
 }
+/* footer */
+footer {
+    background-color: #3d3c42;
+    font-size: 14px;
+}
+footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+footer a {
+    color: #737d82;
+}
+footer a:hover {
+    color: #b0bfc7;
+    text-decoration: underline;
+}
