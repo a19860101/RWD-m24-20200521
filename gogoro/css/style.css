@@ -110,16 +110,32 @@ header .content {
     font-weight: 900;
     font-size: 80px;
     line-height: 80px;
+    margin-bottom: 100px;
+    position: relative;
+    left: -4px;
 }
 #station .number {
     font-size: 64px;
     font-weight: 100;
+    position: relative;
+    left: -4px;
 }
 #station .content {
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 30px;
 }
 #station .battery {
     position: relative;
     bottom: -19px;
+}
+#station .btn {
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
