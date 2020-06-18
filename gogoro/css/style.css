@@ -90,3 +90,36 @@ header .content {
     border-color: #fff;
     border-style: solid;
 }
+/* station */
+#station {
+    background-image: linear-gradient(240deg,#3cff00,#01ffdd);
+    border-width: 0 3px 6px;
+    border-color: #fff;
+    border-style: solid;
+}
+#station .caption {
+    padding-top: 80px;
+    padding-left: 80px;
+    color: #333;
+}
+#station .six {
+    font-size: 24px;
+    font-weight: 700;
+}
+#station .three {
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 80px;
+}
+#station .number {
+    font-size: 64px;
+    font-weight: 100;
+}
+#station .content {
+    font-size: 14px;
+    line-height: 18px;
+}
+#station .battery {
+    position: relative;
+    bottom: -19px;
+}
