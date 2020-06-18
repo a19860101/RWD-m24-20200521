@@ -176,3 +176,36 @@ header .content {
 
     text-align: center;
 }
+/* impact */
+#impact {
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-width: 0 3px 6px;
+    border-color: #fff;
+    border-style: solid;
+}
+#impact h2 {
+    text-align: center;
+}
+#impact .earth {
+    text-align: center;
+}
+#impact .km {
+    font-size:66px;
+    font-weight: 100;
+}
+#impact .km sup {
+    font-size: 0.5em;
+}
+#impact .secondary-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+#impact .content {
+    font-size: 20px;
+    font-weight: 400;
+}
+#impact .wrapper {
+    margin: 100px 0;
+}
