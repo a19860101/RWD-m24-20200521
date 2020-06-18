@@ -147,3 +147,20 @@ header .content {
 #station .btn i {
     color: #33da01;
 }
+/* news */
+#news .blog {
+    height: 400px;
+    background:url("../images/blog.jpg")no-repeat center center;
+    background-size: cover;
+    border-width: 0 3px 6px;
+    border-color: #fff;
+    border-style: solid;
+}
+#news .eeyo {
+    height: 400px;
+    background:url("../images/eeyo.png")no-repeat center center;
+    background-size: cover;
+    border-width: 0 3px 6px;
+    border-color: #fff;
+    border-style: solid;
+}
