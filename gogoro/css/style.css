@@ -239,3 +239,15 @@ footer a:hover {
     color: #b0bfc7;
     text-decoration: underline;
 }
+/* copyright */
+#copyright {
+    font-size: 12px;
+    background-color: #303030;
+    color: #fff;
+}
+#copyright a {
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: 1px;
+}
