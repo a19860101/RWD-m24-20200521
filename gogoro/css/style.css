@@ -251,3 +251,22 @@ footer a:hover {
     margin-right: 10px;
     letter-spacing: 1px;
 }
+/* footer sns */
+.sns {
+    margin-top: 10px;
+}
+.sns a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #bbbbbb;
+    line-height: 40px;
+    text-align: center;
+    color: #303030;
+    transition: .3s;
+    margin: 3px;
+}
+.sns a:hover {
+    background-color: #303030;
+}
