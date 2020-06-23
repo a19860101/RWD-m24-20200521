@@ -48,7 +48,8 @@
 [class^="col"]{
     padding: 15px;
 }
-@media screen and (min-width: 600px){    .fixed-width {
+@media screen and (min-width: 600px){    
+    .fixed-width {
         width:600px;
     }
     .col-sm-1 {
