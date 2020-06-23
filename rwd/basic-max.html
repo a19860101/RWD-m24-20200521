@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fixed-width {
+                width: 1000px;
+                margin: auto;
+                background-color: #f89a2f;
+            }
+        @media screen and (max-width: 1000px){
+            .fixed-width {
+                width: 600px;
+                margin: auto;
+                background-color: #9af82f;
+            }
+        }
+        @media screen and (max-width: 600px){
+            .fixed-width {
+                width: 100%;
+                margin: auto;
+                background-color: #2fd0f8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-width">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nostrum a aspernatur adipisci totam laboriosam pariatur porro voluptates rerum cumque necessitatibus repellendus ratione nam repudiandae ea, velit fugit modi eligendi!
+    </div>
+</body>
+</html>
