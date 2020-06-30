@@ -24,7 +24,7 @@ nav .logo {
 @media(min-width: 960px){
     nav {
         background: transparent;
-        position: fixed;
+          
     }
     nav:hover{
         background: #000;
@@ -122,6 +122,8 @@ header .content {
 }
 #station .caption {
     padding-top: 30px;
+    padding-left: 30px;
+    color: #333;
 }
 
 #station .six {
@@ -134,10 +136,14 @@ header .content {
     line-height: 60px;
     margin-bottom: 30px;
     position: relative;
+    left: -4px;
+}
 #station .number {
     font-size: 64px;
     font-weight: 100;
     position: relative;
+    left: -4px;
+}
 #station .content {
     font-size: 14px;
     line-height: 18px;
@@ -168,6 +174,8 @@ header .content {
 @media screen and (min-width: 1200px){
     #station .caption {
         padding-top: 80px;
+        padding-left: 80px;
+    }
     #station .three {
         font-size: 80px;
         line-height: 80px;
@@ -248,6 +256,7 @@ header .content {
     padding: 5px 20px;
     color: #eee;
     background-color: #888888;
+}
 /* footer */
 footer {
     background-color: #3d3c42;
