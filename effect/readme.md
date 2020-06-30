@@ -23,3 +23,21 @@
     transition: width .3s 1s ease-in-out;
 }
 ```
+
+## transform 變形
+- scale()       比例
+- rotate()      旋轉
+- translate()   位移
+- skew()        傾斜
+
+```css
+.box {
+    transform: scale(.5,.5);
+    transform: rotate(45deg);
+    transform: translate(100px,300px);
+    transform: skew(30deg,45deg);
+
+    transform: scale(.5)rotate(45deg)translate(100px,100px)skew(15deg,0);
+}
+```
+> 使用rotate時，xyz軸也會跟著旋轉
