@@ -16,12 +16,40 @@ nav a {
 nav .row {
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    flex-direction: column;
+
+    /* height: 60px; */
 }
 nav .logo {
     font-size:32px;
     position: relative;
     bottom: 5px;
+}
+@media(min-width: 960px){
+    nav {
+        background: transparent;
+        position: fixed;
+        transition: .3s;
+    }
+    nav:hover{
+        background: #000;
+    }
+    nav a {
+        color: #eee;
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    nav .row {
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+    }
+    nav .logo {
+        font-size:32px;
+        position: relative;
+        bottom: 5px;
+    }
 }
 /* header */
 header {
