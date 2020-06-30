@@ -98,19 +98,20 @@ header .content {
     border-style: solid;
 }
 #station .caption {
-    padding-top: 80px;
-    padding-left: 80px;
+    padding-top: 30px;
+    padding-left: 30px;
     color: #333;
 }
+
 #station .six {
     font-size: 24px;
     font-weight: 700;
 }
 #station .three {
     font-weight: 900;
-    font-size: 80px;
-    line-height: 80px;
-    margin-bottom: 100px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 30px;
     position: relative;
     left: -4px;
 }
@@ -146,6 +147,17 @@ header .content {
 }
 #station .btn i {
     color: #33da01;
+}
+@media screen and (min-width: 1200px){
+    #station .caption {
+        padding-top: 80px;
+        padding-left: 80px;
+    }
+    #station .three {
+        font-size: 80px;
+        line-height: 80px;
+        margin-bottom: 100px;
+    }
 }
 /* news */
 #news .blog {
