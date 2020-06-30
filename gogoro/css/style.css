@@ -24,7 +24,7 @@ nav .logo {
 @media(min-width: 960px){
     nav {
         background: transparent;
-          
+        position: fixed;
     }
     nav:hover{
         background: #000;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #ff5656;
+
+            /* transition: .3s 1s; */
+            /* transition: width 3s,height 3s; */
+            /* transition-property: width,height,background-color; */
+            /* transition-duration: 3s,10s,1s; */
+            /* transition: width .5s,height .5s .5s,background-color .5s 1s */
+            transition-property: 
+                width,
+                height,
+                background-color;
+            transition-duration: .5s;
+            transition-delay: 0s,.5s,1s;
+            /* 
+                transition: property duration delay
+            */
+        }
+        .box:hover {
+            background-color: #3fcab8;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
