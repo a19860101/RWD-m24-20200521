@@ -83,3 +83,39 @@ ul,li {
         text-align: right;
     }
 }
+/* display */
+
+.d-inline {display: inline;}
+.d-block {display: block;}
+.d-inline-block {display: inline-block;}
+.d-flex {display: flex;}
+.d-table {display: table;}
+.d-table-cell {display: table-cell;}
+.d-none {display: none;}
+@media screen and (min-width: 600px){
+    .d-sm-inline {display: inline;}
+    .d-sm-block {display: block;}
+    .d-sm-inline-block {display: inline-block;}
+    .d-sm-flex {display: flex;}
+    .d-sm-table {display: table;}
+    .d-sm-table-cell {display: table-cell;}
+    .d-sm-none {display: none;}
+}
+@media screen and (min-width: 960px){
+    .d-md-inline {display: inline;}
+    .d-md-block {display: block;}
+    .d-md-inline-block {display: inline-block;}
+    .d-md-flex {display: flex;}
+    .d-md-table {display: table;}
+    .d-md-table-cell {display: table-cell;}
+    .d-md-none {display: none;}
+}
+@media screen and (min-width: 1200px){
+    .d-lg-inline {display: inline;}
+    .d-lg-block {display: block;}
+    .d-lg-inline-block {display: inline-block;}
+    .d-lg-flex {display: flex;}
+    .d-lg-table {display: table;}
+    .d-lg-table-cell {display: table-cell;}
+    .d-lg-none {display: none;}
+}

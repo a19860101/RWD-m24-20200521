@@ -282,3 +282,12 @@ footer a:hover {
 .sns a:hover {
     background-color: #303030;
 }
+
+/* .sns br {
+    display: none;
+}
+@media screen and (min-width: 600px){
+    .sns br {
+        display: inline;
+    }
+} */
