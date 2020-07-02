@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 200px;
+            height: 300px;
+            /* border: 1px solid #000; */
+            position: relative;
+            perspective: 600px;
+        }
+        .front {
+            width: 100%;
+            height: 100%;
+            background-color: #e36387;
+            position: absolute;
+
+            transition: .5s;
+            transform-origin: left;
+            opacity: 1;
+        }
+        .back {
+            width: 100%;
+            height: 100%;
+            background-color: #a6dcef;
+            position: absolute;
+            transform:rotateY(300deg);
+            backface-visibility: hidden;
+            opacity: 0;
+
+            transition: .5s;
+            transform-origin: left;
+        }
+        .card:hover .front {
+            transform:rotateY(45deg);
+            opacity: 0;
+        }
+        .card:hover .back {
+            transform:rotateY(360deg);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="front">
+            <img src="https://picsum.photos/id/68/200/300" alt="">
+        </div>
+        <div class="back">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, totam.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
