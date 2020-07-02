@@ -20,29 +20,29 @@
         }
         .carousel {
             transform-style: preserve-3d;
-            animation: ro 5s infinite linear;
+            animation: ro2 10s infinite;
         }
         .plane {
             background-image: linear-gradient(to left top,#fe346e,#400082);
-            opacity: .5;
+            /* opacity: .5; */
         }
         .plane:nth-of-type(1){
-            transform: translateZ(259.8px);
+            transform: translateZ(360px);
         }
         .plane:nth-of-type(2){
-            transform: rotateY(60deg)translateZ(259.8px);
+            transform: rotateY(60deg)translateZ(360px);
         }
         .plane:nth-of-type(3){
-            transform: rotateY(120deg)translateZ(259.8px);
+            transform: rotateY(120deg)translateZ(360px);
         }
         .plane:nth-of-type(4){
-            transform: rotateY(180deg)translateZ(259.8px);
+            transform: rotateY(180deg)translateZ(360px);
         }
         .plane:nth-of-type(5){
-            transform: rotateY(240deg)translateZ(259.8px);
+            transform: rotateY(240deg)translateZ(360px);
         }
         .plane:nth-of-type(6){
-            transform: rotateY(300deg)translateZ(259.8px);
+            transform: rotateY(300deg)translateZ(360px);
         }
         @keyframes ro {
             from {
@@ -52,17 +52,33 @@
                 transform: rotateY(360deg);
             }
         }
+        @keyframes ro2 {
+            0% {transform: rotateY(0deg);}
+            8.3% {transform: rotateY(0deg);}
+            16.6% {transform: rotateY(60deg);}
+            24.9% {transform: rotateY(60deg);}
+            33.2% {transform: rotateY(120deg);}
+            41.5% {transform: rotateY(120deg);}
+            49.8% {transform: rotateY(180deg);}
+            58.1% {transform: rotateY(180deg);}
+            66.4% {transform: rotateY(240deg);}
+            74.7% {transform: rotateY(240deg);}
+            83% {transform: rotateY(300deg);}
+            91.3% {transform: rotateY(300deg);}
+            100% {transform: rotateY(360deg);}
+        }
     </style>
 </head>
 <body>
     <div class="space">
         <div class="carousel">
-            <div class="plane"></div>
-            <div class="plane"></div>
-            <div class="plane"></div>
-            <div class="plane"></div>
-            <div class="plane"></div>
-            <div class="plane"></div>
+            <div class="plane"><img src="https://picsum.photos/id/15/300/200" alt=""></div>
+            <div class="plane"><img src="https://picsum.photos/id/115/300/200" alt=""></div>
+            <div class="plane"><img src="https://picsum.photos/id/125/300/200" alt=""></div>
+            <div class="plane"><img src="https://picsum.photos/id/135/300/200" alt=""></div>
+            <div class="plane"><img src="https://picsum.photos/id/151/300/200" alt=""></div>
+            <div class="plane"><img src="https://picsum.photos/id/152/300/200" alt=""></div>
+
         </div>
     </div>
 </body>
