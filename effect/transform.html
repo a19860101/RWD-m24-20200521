@@ -15,7 +15,17 @@
             /* transform: translate(100px,300px) */
             /* transform: skew(30deg,45deg); */
 
-            transform: scale(.5)rotate(45deg)translate(100px,100px)skew(15deg,0);
+            /* transform: scale(.5)rotate(45deg)translate(100px,100px)skew(15deg,0); */
+
+            transform: perspective(600px)skewY(15deg);
+            /* 
+                perspective() 透視點
+                scaleX(),scaleY(),scaleZ()
+                rotateX(),rotateY(),rotateZ()
+                translateX(),translateY(),translateZ()
+                skewX(),skewY()
+
+            */
         }
     </style>
 </head>

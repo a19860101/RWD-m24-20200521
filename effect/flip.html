@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 200px;
+            height: 300px;
+            border: 1px solid #000;
+            position: relative;
+        }
+        .front {
+            width: 100%;
+            height: 100%;
+            background-color: #e36387;
+            position: absolute;
+
+        }
+        .back {
+            width: 100%;
+            height: 100%;
+            background-color: #a6dcef;
+            position: absolute;
+            transform:rotateY(180deg);
+            backface-visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="front">FRONT</div>
+        <div class="back">BACK</div>
+    </div>
+</body>
+</html>
