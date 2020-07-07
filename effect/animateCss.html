@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css" />
     <style>
         .container {
             display: flex;
@@ -23,7 +24,21 @@
 </head>
 <body>
     <div class="container">
-        <div class="box animate__animated animate__rollOut"></div>
+        <!-- migration 3.x and under -->
+        <div class="box animated rollOut delay-2s"></div>
+        <div class="box animated rollOut delay-3s"></div>
+        <div class="box animated rollOut delay-4s"></div>
+        <div class="box animated rollOut delay-5s"></div>
+        <div class="box animated rollOut slow delay-2s"></div>
+        <div class="box animated rollOut slower delay-2s"></div>
+        <div class="box animated rollOut fast delay-2s"></div>
+        <div class="box animated rollOut faster delay-2s"></div>
+        <div class="box animated rollOut repeat-1 delay-2s"></div>
+        <div class="box animated rollOut repeat-2 delay-2s"></div>
+        <div class="box animated rollOut repeat-3 delay-2s"></div>
+        <div class="box animated rollOut infinite"></div>
+        <!-- 4.0 up -->
+        <!-- <div class="box animate__animated animate__rollOut"></div> -->
         <!-- <div class="box animate__animated animate__rollOut animate__delay-2s"></div> -->
         <!-- <div class="box animate__animated animate__rollOut animate__delay-3s"></div> -->
         <!-- <div class="box animate__animated animate__rollOut animate__delay-4s"></div> -->
@@ -35,7 +50,7 @@
         <!-- <div class="box animate__animated animate__rollOut animate__repeat-1 animate__delay-2s"></div> -->
         <!-- <div class="box animate__animated animate__rollOut animate__repeat-2 animate__delay-2s"></div> -->
         <!-- <div class="box animate__animated animate__rollOut animate__repeat-3 animate__delay-2s"></div> -->
-        <div class="box animate__animated animate__rollOut animate__infinite"></div>
+        <!-- <div class="box animate__animated animate__rollOut animate__infinite"></div> -->
     </div>
 </body>
 </html>
