@@ -11,17 +11,31 @@
             height: 100vh;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
         }
         .box {
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
             background-color: #097cff;
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box animate__animated animate__flipInX"></div>
+        <div class="box animate__animated animate__rollOut"></div>
+        <!-- <div class="box animate__animated animate__rollOut animate__delay-2s"></div> -->
+        <!-- <div class="box animate__animated animate__rollOut animate__delay-3s"></div> -->
+        <!-- <div class="box animate__animated animate__rollOut animate__delay-4s"></div> -->
+        <!-- <div class="box animate__animated animate__rollOut animate__delay-5s"></div> -->
+        <!-- <div class="box animate__animated animate__rollOut animate__delay-2s animate__slow"></div> -->
+        <!-- <div class="box animate__animated animate__rollOut animate__delay-2s animate__slower"></div> -->
+        <!-- <div class="box animate__animated animate__rollOut animate__delay-2s animate__fast"></div> -->
+        <!-- <div class="box animate__animated animate__rollOut animate__delay-2s animate__faster"></div> -->
+        <!-- <div class="box animate__animated animate__rollOut animate__repeat-1 animate__delay-2s"></div> -->
+        <!-- <div class="box animate__animated animate__rollOut animate__repeat-2 animate__delay-2s"></div> -->
+        <!-- <div class="box animate__animated animate__rollOut animate__repeat-3 animate__delay-2s"></div> -->
+        <div class="box animate__animated animate__rollOut animate__infinite"></div>
     </div>
 </body>
 </html>
