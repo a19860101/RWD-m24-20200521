@@ -11,6 +11,10 @@
 }
 
 /* service */
+#service {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 #service .icon {
     width: 150px;
     height: 150px;
@@ -19,4 +23,7 @@
 }
 #service .icon i {
     vertical-align: middle;
+}
+#service h2 {
+    font-size: 3em;
 }
