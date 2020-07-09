@@ -27,3 +27,8 @@
 #service h2 {
     font-size: 3em;
 }
+/* portfolio */
+#portfolio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
