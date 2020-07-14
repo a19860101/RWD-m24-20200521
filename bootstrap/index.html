@@ -249,32 +249,30 @@
             </div>
         </div>
     </div>
-    <div id="contact">
+    <div id="contact" class="bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-12 mb-5 text-center">
                     <h2 class="m-0">Contact</h2>
                     <p class="lead">Lorem ipsum dolor sit amet.</p>
                 </div>
-                <div class="col-6">
+                <div class="col-12">
                     <form action="">
-                        <div class="form-group">
-                            <label for="name">姓名</label>
-                            <input type="text" class="form-control" id="name">
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <input type="text" class="form-control p-4 mb-4" id="name" placeholder="請輸入姓名">
+  
+                                <input type="text" class="form-control p-4 mb-4" id="mail" placeholder="請輸入Mail">
+                    
+                                <input type="text" class="form-control p-4 mb-4" id="phone" placeholder="請輸入電話">
+                            </div>
+                            <div class="form-group col-6">
+                                <textarea id="msg" rows="6" class="form-control p-4 "placeholder="請輸入訊息"></textarea>
+                            </div>
+                            <div class="text-center col-12">
+                                <input type="submit" class="btn btn-primary btn-lg" value="送出訊息">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="mail">Email</label>
-                            <input type="text" class="form-control" id="mail">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">電話</label>
-                            <input type="text" class="form-control" id="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="msg">訊息</label>
-                            <textarea id="msg" cols="30" rows="10" class="form-control"></textarea>
-                        </div>
-                        <input type="submit" class="btn btn-primary" value="送出">
                     </form>
                 </div>
             </div>

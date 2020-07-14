@@ -59,3 +59,8 @@
 #tean .sns a i {
     vertical-align: middle;
 }
+/* contact */
+#contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
