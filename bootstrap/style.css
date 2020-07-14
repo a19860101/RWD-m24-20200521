@@ -64,3 +64,15 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
+/* footer */
+footer .sns a{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #333;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    color: #eee;
+    vertical-align: middle;
+}
