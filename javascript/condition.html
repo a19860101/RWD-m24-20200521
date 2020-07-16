@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        let x = 90;
+        let x = 10;
         // if
         if(x > 0){
             console.log('success');
@@ -30,7 +30,7 @@
         }
 
         //switch
-        let a = 3 ;
+        let a = -3 ;
         switch(a){
             case 0:
                 console.log(0);
@@ -44,6 +44,19 @@
             default:
                 console.log('error');
         }
+        switch(true){
+            case a > 0:
+                console.log('正數');
+                break;
+            case a < 0:
+                console.log('負數');
+                break;
+            default:
+                console.log('error');
+        }
+
+        let s = x > 0 ? '正數':'負數';
+        console.log(s);
     </script>
 </body>
 </html>
