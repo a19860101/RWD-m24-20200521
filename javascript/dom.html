@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title" class="text">我是標題</h1>
+    <p class="text">lorem</p>
+    <ul>
+        <li class="item">list 1</li>
+        <li class="item">list 2</li>
+        <li class="item">list 3</li>
+        <li class="item">list 4</li>
+    </ul>
+    <script>
+        //HTMLCollection
+        const title = document.getElementById('title');
+        // console.log(title);
+        const text = document.getElementsByClassName('text')[0];
+        // console.log(text);
+        const h1 = document.getElementsByTagName('h1')[0];
+        // console.log(h1);
+
+        //NodeList
+        // const t = document.querySelector('#title');
+        // const t = document.querySelector('.text');
+        // const t = document.querySelector('h1');
+        // const t = document.querySelectorAll('#title');
+        // const t = document.querySelectorAll('.text');
+        const t = document.querySelectorAll('h1');
+        // console.log(t);
+
+
+
+        // const item = document.getElementsByClassName('item');
+        // for(let i=0;i<item.length;i++){
+        //     console.log(item[i]);
+        // }
+        
+        const items = document.querySelectorAll('.item');
+        for(let i=0;i<items.length;i++){
+            console.log(items[i]);
+        }
+        items.forEach(function(item){            
+            console.log(item);
+        })
+    </script>
+</body>
+</html>
