@@ -10,6 +10,44 @@
         // var,let,const
         // 範疇不同 scope
 
+        /*  
+            var -> function scope ->可重複宣告
+            let,const -> block scope ->不可重複宣告
+        */
+
+        if(100){
+            let x = 100;
+        }
+        let x = 999;
+        console.log(x);
+        for(let i=0;i<10;i++){
+            // console.log(i);
+            const j = 0;
+            // console.log(j);
+        }
+
+        // var qq = 100;
+        // var qq = 999;
+        // console.log(qq);
+
+        let qq = 100;
+
+        qq = 999;
+
+        console.log(qq);
+        //不可重新賦值
+
+        const z = ['apple','banana'];
+
+        const qwer = function(){
+            let x = 100;
+            return x;
+        }
+        // z.push('cat');
+        console.log(z);
+        console.log(qwer());
+        
+
     </script>
 </body>
 </html>
