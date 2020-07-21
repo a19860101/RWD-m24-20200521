@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let o = new Object();
+        o.name = 'mary';
+        o.mail = 'asdfadsfasdf@gmail.com';
+
+        console.log(o);
+        //物件實字
+        let obj = {
+            name: 'John',
+            mail: 'asdf@gmail.com',
+            gender: '男',
+        }
+        // console.log(obj);
+        console.log(obj.name);
+        console.log(obj.mail);
+        console.log(obj.gender);
+        console.log(obj['name']);
+        console.log(obj['mail']);
+        console.log(obj['gender']);
+
+        let drinks = [
+            {
+                name: '紅茶',
+                price: 20
+            },
+            {
+                name: '綠茶',
+                price: 20
+            },
+            {
+                name: '奶茶',
+                price: 30
+            },
+            {
+                name: '珍珠奶茶',
+                price: 50
+            },
+            {
+                name: '梅子綠茶',
+                price: 35
+            },
+        ];
+        // console.log(drinks);
+        // console.log(drinks[3].name)
+        // console.log(drinks[3].price)
+        drinks.forEach(function(drink){
+            console.log(drink.name);
+            console.log(drink.price);
+        })
+    </script>
+</body>
+</html>

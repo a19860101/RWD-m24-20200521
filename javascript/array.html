@@ -17,15 +17,46 @@
 
         //陣列實字
         let c = ['紅茶','綠茶','奶茶','多多綠','珍珠奶茶'];
+        let c2 = ['雞排','車輪餅','雞蛋糕'];
 
         // console.log(c[0]);
         // console.log(c[1]);
         // console.log(c[2]);
         console.log(c.length);
 
-        for(let i=0;i<c.length;i++){
-            console.log(c[i]);
-        }
+        // for(let i=0;i<c.length;i++){
+        //     console.log(c[i]);
+        // }
+
+        c.push('梅子綠茶');
+        c.pop();
+        c.unshift('拿鐵');
+        c.shift();
+
+        //拼接 splice
+        // c.splice(3,1);
+        // c.splice(3,1,'拿鐵','美式');
+
+        //切片 slice
+        // let c_slice = c.slice(1,4);
+        // console.log(c_slice);
+
+        //陣列->字串 join
+        let c_string = c.join();
+        console.log(c_string);
+        //字串->陣列 split
+        let s = 'HELLO,WORLD,!!';
+        let s_array = s.split('O');
+
+        //合併 concat
+        // let z = c.concat(c2);
+        let z = c2.concat(c);
+        console.log(z);
+
+        console.log(s_array);
+        c.forEach(function(data,idx){
+            console.log(data,idx);
+        })
 
     </script>
 </body>

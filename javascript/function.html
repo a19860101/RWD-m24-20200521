@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //函式宣告式(提升性)
+        function test(x,y){
+            // console.log(x + y);
+            let a = x + y;
+            return a;
+        }
+
+        let a = test(10,50);
+        console.log(a);
+        console.log(test(10,80));
+        //函式表達式
+        let test2 = function(x,y){
+            // console.log(x*y);
+            return x*y;
+        }
+        let b = test2(1234,1234);
+        console.log(b);
+        console.log(test2(11,11));
+
+    </script>
+</body>
+</html>
