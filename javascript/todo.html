@@ -8,8 +8,8 @@
 <body>
     <input type="text" id="input">
     <button onclick="add()">新增</button>
-    <div id="output"></div>
-    <ul>
+    <!-- <div id="output"></div> -->
+    <ul id="todos">
         <li>list 1</li>
         <li>list 2</li>
         <li>list 3</li>
@@ -19,10 +19,16 @@
             let input = document.getElementById('input').value;
             // console.log(input)
             
-            let textNode = document.createTextNode(input);
-            document.getElementById('output').appendChild(textNode);
+            // 使用文字節點
+            // let textNode = document.createTextNode(input);
+            // let li = document.createElement('li');
+            // li.appendChild(textNode);
+            // document.getElementById('todos').appendChild(li);
             
-            // document.getElementById('output').append(input);
+            //不使用文字節點
+            let li = document.createElement('li');
+            li.append(input)
+            document.getElementById('todos').append(li);
         }
     </script>
 </body>
