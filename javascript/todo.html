@@ -64,9 +64,15 @@
             document.getElementById('todos').append(li);
             li.classList.add('item');
 
-
             document.getElementById('input').value = '';
         }
+        document.onclick = function(e){
+            // console.log(e)
+            if(e.target.className == 'del'){
+                console.log('delete');
+            }   
+        }
+
     </script>
 </body>
 </html>
