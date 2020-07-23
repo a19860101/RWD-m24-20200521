@@ -11,16 +11,21 @@
     </style>
 </head>
 <body>
+    <!-- 第一種方法 -->
+    <!-- <button onclick="showText()">click</button> -->
+    
     <button id="btn" class="btn">click</button>
     <h1>hello world</h1>
     <script>
         function showText(){
             document.querySelector('h1').style.display = 'block';
         }
-        document.getElementById('btn').onclick = function(){
-            // showText();
-            document.querySelector('h1').style.display = 'block';
-        }
+        
+        //第二種方法 onclick
+        // document.getElementById('btn').onclick = function(){
+        //     // showText();
+        //     document.querySelector('h1').style.display = 'block';
+        // }
         // document.getElementsByClassName('btn')[0].onclick = function(){
         //     console.log('test2')
         // }
@@ -28,6 +33,21 @@
 
         //     console.log('test3')
         // }
+
+        //第三種方法 addEventListener
+        // document.getElementById('btn').addEventListener('click',showText);
+        // document.getElementById('btn').addEventListener('click',function(){
+        //     // showText();
+        //     document.querySelector('h1').style.display = 'block';
+        // });
+        document.getElementsByClassName('btn')[0].addEventListener('click',function(){
+            // showText();
+            document.querySelector('h1').style.display = 'block';
+        });
+        // document.querySelector('.btn').addEventListener('click',function(){
+        //     // showText();
+        //     document.querySelector('h1').style.display = 'block';
+        // });
     </script>
 </body>
 </html>
