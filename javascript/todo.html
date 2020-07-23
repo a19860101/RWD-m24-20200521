@@ -85,8 +85,8 @@
                     e.target.parentElement.remove();
                 }
             }   
-            if(e.target.className == 'item'){
-                e.target.classList.add('complete');
+            if(e.target.className.indexOf('item') > -1){
+                e.target.classList.toggle('complete');
             }
         }
 
