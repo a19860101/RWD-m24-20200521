@@ -69,7 +69,9 @@
         document.onclick = function(e){
             // console.log(e)
             if(e.target.className == 'del'){
-                console.log('delete');
+                console.log(e);
+                console.log(e.target.parentElement);
+                e.target.parentElement.remove();
             }   
         }
 
