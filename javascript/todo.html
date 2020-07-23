@@ -26,6 +26,11 @@
         }
         .del {
             float: right;
+            cursor: pointer;
+            transition: .3s;
+        }
+        .del:hover {
+            color: #f00;
         }
     </style>
 </head>
@@ -68,10 +73,14 @@
         }
         document.onclick = function(e){
             // console.log(e)
+            
             if(e.target.className == 'del'){
-                console.log(e);
-                console.log(e.target.parentElement);
-                e.target.parentElement.remove();
+                if(confirm('確認刪除？')){
+                    console.log(e);
+                    console.log(e.target.parentElement);
+                    e.target.parentElement.remove();
+                }
+                
             }   
         }
 
