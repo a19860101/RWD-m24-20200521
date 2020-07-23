@@ -17,6 +17,11 @@
     <script>
         //HTMLCollection
         const title = document.getElementById('title');
+
+        title.style.color = 'red';
+        title.style.backgroundColor = 'blue';
+        title.textContent = '123456';
+        title.innerHTML = '<p>123</p>'
         // console.log(title);
         const text = document.getElementsByClassName('text')[0];
         // console.log(text);
@@ -45,6 +50,9 @@
         }
         items.forEach(function(item){            
             console.log(item);
+            item.style.color = '#681';
+            item.style.fontSize = '20px'
+            item.textContent = '666'
         })
     </script>
 </body>
