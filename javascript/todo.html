@@ -4,16 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * 
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 600px;
+            margin: auto;
+        }
+        #input {
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .item {
+            list-style: none;
+            padding: 10px;
+            background-color: #ddd;
+            border-bottom: 1px solid #bbb;
+        }
+        .del {
+            float: right;
+        }
+    </style>
 </head>
 <body>
-    <input type="text" id="input">
-    <button onclick="add()">新增</button>
-    <!-- <div id="output"></div> -->
-    <ul id="todos">
-        <li class="item">list 1</li>
-        <li class="item">list 2</li>
-        <li class="item">list 3</li>
-    </ul>
+    <div class="container">
+        
+        <input type="text" id="input">
+        <button onclick="add()">新增</button>
+        <!-- <div id="output"></div> -->
+        <ul id="todos">
+            <li class="item">list 1<span class="del">刪除</span></li>
+            <li class="item">list 2<span class="del">刪除</span></li>
+            <li class="item">list 3<span class="del">刪除</span></li>
+        </ul>
+    </div>
     <script>
         function add(){
             let input = document.getElementById('input').value;
@@ -28,6 +55,12 @@
             //不使用文字節點
             let li = document.createElement('li');
             li.append(input)
+            
+            let span = document.createElement('span');
+            span.classList.add('del');
+            span.append('刪除')
+            li.append(span);
+
             document.getElementById('todos').append(li);
             li.classList.add('item');
 
