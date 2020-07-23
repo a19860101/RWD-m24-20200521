@@ -24,6 +24,10 @@
             background-color: #ddd;
             border-bottom: 1px solid #bbb;
         }
+        .item.complete {
+            background-color: #aaa;
+            text-decoration: line-through;
+        }
         .del {
             float: right;
             cursor: pointer;
@@ -42,7 +46,7 @@
         <!-- <div id="output"></div> -->
         <ul id="todos">
             <li class="item">list 1<span class="del">刪除</span></li>
-            <li class="item">list 2<span class="del">刪除</span></li>
+            <li class="item complete">list 2<span class="del">刪除</span></li>
             <li class="item">list 3<span class="del">刪除</span></li>
         </ul>
     </div>
@@ -80,8 +84,10 @@
                     console.log(e.target.parentElement);
                     e.target.parentElement.remove();
                 }
-                
             }   
+            if(e.target.className == 'item'){
+                e.target.classList.add('complete');
+            }
         }
 
     </script>
