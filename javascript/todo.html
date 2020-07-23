@@ -8,6 +8,7 @@
 <body>
     <input type="text" id="input">
     <button onclick="add()">新增</button>
+    <div id="output"></div>
     <ul>
         <li>list 1</li>
         <li>list 2</li>
@@ -16,7 +17,12 @@
     <script>
         function add(){
             let input = document.getElementById('input').value;
-            console.log(input)
+            // console.log(input)
+            
+            let textNode = document.createTextNode(input);
+            document.getElementById('output').appendChild(textNode);
+            
+            // document.getElementById('output').append(input);
         }
     </script>
 </body>
