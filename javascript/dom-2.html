@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn" class="btn">click</button>
+    <h1>hello world</h1>
+    <script>
+        function showText(){
+            document.querySelector('h1').style.display = 'block';
+        }
+        document.getElementById('btn').onclick = function(){
+            // showText();
+            document.querySelector('h1').style.display = 'block';
+        }
+        // document.getElementsByClassName('btn')[0].onclick = function(){
+        //     console.log('test2')
+        // }
+        // document.querySelector('.btn').onclick = function(){
+
+        //     console.log('test3')
+        // }
+    </script>
+</body>
+</html>
