@@ -91,7 +91,7 @@
         })
 
         document.onclick = function(e){
-            if(e.target.className == 'modal-close'){
+            if(e.target.className == 'modal-close' || e.target.className == 'modal-overlay'){
                 let modal = document.querySelectorAll('.modal');
                 modal.forEach(function(m){
                     m.classList.remove('active')
