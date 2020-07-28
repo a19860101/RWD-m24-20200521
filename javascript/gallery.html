@@ -20,5 +20,18 @@
         <img src="images/4682103_500.jpg" alt="" class="thumb">
         <img src="images/4682104_500.jpg" alt="" class="thumb">
     </div>
+    <script>
+        let thumb = document.querySelectorAll('.thumb');
+        thumb.forEach(function(t){
+            t.onclick = function(e){
+                let newImg = e.target.getAttribute('src');
+                // let newImg = e.target.src;
+                console.log(newImg);
+                let targetImg = document.getElementById('gallery').children[0];
+                targetImg.setAttribute('src',newImg);
+            }
+        })
+
+    </script>
 </body>
 </html>
