@@ -22,8 +22,19 @@
 
         let menus_parent_element = menus.parentElement;
         let menus_parent_node = menus.parentNode;
-        console.log(menus_parent_element);
-        console.log(menus_parent_node);
+        // console.log(menus_parent_element);
+        // console.log(menus_parent_node);
+
+        let li = document.querySelectorAll('li')[2];
+
+        let li_next = li.nextElementSibling;
+        let li_prev = li.previousElementSibling;
+        console.log(li_next);
+        console.log(li_prev);
+        let li_next_node = li.nextSibling;
+        let li_prev_node = li.previousSibling;
+        console.log(li_next_node);
+        console.log(li_prev_node);
     </script>
 </body>
 </html>
