@@ -12,10 +12,19 @@
             font-family: "Sagoe ui";
         }
         .modal {
-            display: none;
+            /* display: none; */
+            position: fixed;
+            z-index: -1;
+            opacity: 0;
+            transition: .5s;
         }
         .modal.active{
-            display: block;
+            /* display: block; */
+            /* animation: fadeIn .5s; */
+
+            z-index: 999;
+            opacity: 1;
+            transition: .5s;
         }
         .modal-overlay {
             width: 100%;
@@ -33,6 +42,9 @@
             padding:30px;
             border-radius: 5px;
             transform: translateY(150px);
+        }
+        @keyframes fadeIn {
+            from{opacity: 0;}
         }
     </style>
 </head>
