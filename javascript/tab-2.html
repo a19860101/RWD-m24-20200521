@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .tabs {
+            width: 600px;
+            margin: auto;
+        }
+        .tab-panel {
+            display: none;
+            padding: 15px;
+            background-color: #bbb;
+        }
+        .tab-panel.active {
+            display: block;
+        }
+        .tab-nav {
+            background-color: #ddd;
+        }
+        .tab-link {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #000;
+        }
+        .tab-link.active {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <div class="tab-nav">
+            <a href="#" data-go="tab-1" class="tab-link active">tab-1</a>
+            <a href="#" data-go="tab-2" class="tab-link">tab-2</a>
+            <a href="#" data-go="tab-3" class="tab-link">tab-3</a>
+            <a href="#contact" data-go="contact" class="tab-link">contact</a>
+        </div>
+        <div class="tab-panel active" id="tab-1">
+            <h2>Title 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil corrupti nostrum quia error consectetur et obcaecati atque alias perspiciatis optio, eaque similique dignissimos voluptate pariatur, ratione eveniet officia laborum.
+            </p>
+        </div>
+        <div class="tab-panel" id="tab-2">
+            <h2>Title 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil corrupti nostrum quia error consectetur et obcaecati atque alias perspiciatis optio, eaque similique dignissimos voluptate pariatur, ratione eveniet officia laborum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil corrupti nostrum quia error consectetur et obcaecati atque alias perspiciatis optio, eaque similique dignissimos voluptate pariatur, ratione eveniet officia laborum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil corrupti nostrum quia error consectetur et obcaecati atque alias perspiciatis optio, eaque similique dignissimos voluptate pariatur, ratione eveniet officia laborum.
+            </p>
+        </div>
+        <div class="tab-panel" id="tab-3">
+            <h2>Title 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil corrupti nostrum quia error consectetur et obcaecati atque alias perspiciatis optio, eaque similique dignissimos voluptate pariatur, ratione eveniet officia laborum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil corrupti nostrum quia error consectetur et obcaecati atque alias perspiciatis optio, eaque similique dignissimos voluptate pariatur, ratione eveniet officia laborum.
+            </p>
+        </div>
+        <div class="tab-panel" id="contact">
+            <h2>Title 4</h2>
+            <form action="">
+                <input type="text">
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+    <script>
+        let tab_link = document.querySelectorAll('.tab-link');
+        tab_link.forEach(function(tlink){
+            tlink.onclick = function(e){
+                let go = e.target.dataset.go;
+                console.log(go);
+                tab_link.forEach(function(t){
+                    t.classList.remove('active');
+                })
+                e.target.classList.add('active');
+                let panel = document.querySelectorAll('.tab-panel');
+                panel.forEach(function(pn){
+                    if(go == pn.id){
+                        pn.classList.add('active');
+                    }else{
+                        pn.classList.remove('active');
+                    }
+                })
+            }
+        })
+    </script>
+</body>
+</html>
