@@ -42,6 +42,7 @@
             <a href="#tab-1" class="tab-link active">tab-1</a>
             <a href="#tab-2" class="tab-link">tab-2</a>
             <a href="#tab-3" class="tab-link">tab-3</a>
+            <a href="#contact" class="tab-link">contact</a>
         </div>
         <div class="tab-panel active" id="tab-1">
             <h2>Title 1</h2>
@@ -64,6 +65,13 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil corrupti nostrum quia error consectetur et obcaecati atque alias perspiciatis optio, eaque similique dignissimos voluptate pariatur, ratione eveniet officia laborum.
             </p>
         </div>
+        <div class="tab-panel" id="contact">
+            <h2>Title 4</h2>
+            <form action="">
+                <input type="text">
+                <input type="submit">
+            </form>
+        </div>
     </div>
     <script>
         let tab_link = document.querySelectorAll('.tab-link');
@@ -71,7 +79,10 @@
             tlink.onclick = function(e){
                 let href = e.target.getAttribute('href');
                 console.log(href);
-
+                tab_link.forEach(function(t){
+                    t.classList.remove('active');
+                })
+                e.target.classList.add('active');
                 let panel = document.querySelectorAll('.tab-panel');
                 panel.forEach(function(pn){
                     if(href == '#'+pn.id){
