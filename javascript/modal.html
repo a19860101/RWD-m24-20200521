@@ -48,6 +48,9 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatibus corporis modi obcaecati a temporibus eos, sapiente enim doloremque nulla necessitatibus, suscipit labore reprehenderit ab. Inventore aliquid eaque ut accusamus.
                 </p>
             </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close">Close</a>
+            </div>
         </div>
     </div>
     <div class="modal" id="service">
@@ -61,6 +64,9 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatibus corporis modi obcaecati a temporibus eos, sapiente enim doloremque nulla necessitatibus, suscipit labore reprehenderit ab. Inventore aliquid eaque ut accusamus.
                 </p>
             </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close">Close</a>
+            </div>
         </div>
     </div>
     <script>
@@ -71,6 +77,22 @@
                 document.getElementById(target).classList.add('active');
             }
         })
+
+        document.onclick = function(e){
+            if(e.target.className == 'modal-close'){
+                let modal = document.querySelectorAll('.modal');
+                modal.forEach(function(m){
+                    m.classList.remove('active')
+                })
+            }
+        }
+
+        // let modal_close = document.querySelectorAll('.modal-close');
+        // modal_close.forEach(function(modalClose){
+        //     modalClose.onclick = function(e){
+        //         e.target.parentElement.parentElement.parentElement.classList.remove('active');
+        //     }
+        // })
 
     </script>
 </body>
