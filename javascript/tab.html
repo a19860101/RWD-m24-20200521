@@ -39,9 +39,9 @@
 <body>
     <div class="tabs">
         <div class="tab-nav">
-            <a href="#" class="tab-link active">tab-1</a>
-            <a href="#" class="tab-link">tab-2</a>
-            <a href="#" class="tab-link">tab-3</a>
+            <a href="#tab-1" class="tab-link active">tab-1</a>
+            <a href="#tab-2" class="tab-link">tab-2</a>
+            <a href="#tab-3" class="tab-link">tab-3</a>
         </div>
         <div class="tab-panel active" id="tab-1">
             <h2>Title 1</h2>
@@ -65,5 +65,23 @@
             </p>
         </div>
     </div>
+    <script>
+        let tab_link = document.querySelectorAll('.tab-link');
+        tab_link.forEach(function(tlink){
+            tlink.onclick = function(e){
+                let href = e.target.getAttribute('href');
+                console.log(href);
+
+                let panel = document.querySelectorAll('.tab-panel');
+                panel.forEach(function(pn){
+                    if(href == '#'+pn.id){
+                        pn.classList.add('active');
+                    }else{
+                        pn.classList.remove('active');
+                    }
+                })
+            }
+        })
+    </script>
 </body>
 </html>
