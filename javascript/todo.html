@@ -53,6 +53,11 @@
     <script>
         function add(){
             let input = document.getElementById('input').value;
+
+            if(input == ''){
+                alert('請輸入內容');
+                return;
+            }
             // console.log(input)
             
             // 使用文字節點
