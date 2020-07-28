@@ -18,12 +18,17 @@
             display: none;
             padding: 15px;
             background-color: #bbb;
+            position: relative;
+
         }
         .tab-panel.active {
             display: block;
+            animation: fadeTopIn 1s;
         }
         .tab-nav {
             background-color: #ddd;
+            position: relative;
+            z-index: 99;
         }
         .tab-link {
             display: inline-block;
@@ -33,6 +38,19 @@
         }
         .tab-link.active {
             background-color: #bbb;
+        }
+        @keyframes fadeIn{
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @keyframes fadeTopIn{
+            from {
+                opacity: 0;
+                transform: translateY(-50%);
+            }
+            to {
+                /* opacity: 1; */
+            }
         }
     </style>
 </head>
