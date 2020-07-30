@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
         * {
@@ -104,10 +105,15 @@
             })
             $(window).scroll(function(){
                 let h = $(this).scrollTop();
+                const ani = 'animated'
+                const ani_in = 'rollIn';
+                const ani_out = 'hinge';
                 if(h > 800){
-                    $('#gotop').fadeIn();
+                    // $('#gotop').fadeIn();
+                    $('#gotop').show().removeClass(ani+' '+ani_out).addClass(ani+' '+ani_in);
                 }else{
-                    $('#gotop').fadeOut();
+                    // $('#gotop').fadeOut();
+                    $('#gotop').removeClass(ani+' '+ani_in).addClass(ani+' '+ani_out);
                 }
                 console.log(h);
                 $('nav').find('a').each(function(){
