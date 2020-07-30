@@ -23,7 +23,14 @@
             text-decoration: none;
             color: #eee;
             display: inline-block;
-            margin: 0 15px;
+            margin: 0 5px;
+            padding: 0 15px;
+            transition: .3s;
+        }
+        nav a.active {
+            background-color: #eee;
+            color: #222;
+            transition: .3s;
         }
         #about,#service,#product,#contact{
             height: 100vh;
@@ -59,7 +66,7 @@
 </head>
 <body>
     <nav>
-        <a href="#about" data-target="#about">About</a>
+        <a href="#about" class="active" data-target="#about">About</a>
         <a href="#service" data-target="#service">Service</a>
         <a href="#product" data-target="#product">Product</a>
         <a href="#contact" data-target="#contact">Contact</a>
@@ -76,7 +83,8 @@
                 // console.log($(this).data('target'));
                 // let href = $(this).attr('href');
                 // let _offset = $(href).offset().top;
-
+                $('nav').find('a').removeClass('active');
+                $(this).addClass('active');
                 let target = $(this).data('target');
                 let _offset = $(target).offset().top; 
                 $('html,body').animate({
