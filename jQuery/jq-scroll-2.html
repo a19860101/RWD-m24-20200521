@@ -53,6 +53,7 @@
             right: 15px;
             bottom: 15px;
             border-radius: 50%;
+            display: none;
         }
     </style>
 </head>
@@ -70,7 +71,7 @@
     <a href="#" id="gotop">TOP</a>
     <script>
         $(function(){
-            $('nav').find('a').click(function(){
+            $('nav').find('a').click(function(e){
                 // console.log($(this).attr('href'));
                 // console.log($(this).data('target'));
                 // let href = $(this).attr('href');
@@ -81,12 +82,24 @@
                 $('html,body').animate({
                     scrollTop: _offset
                 })
+                // return false;
+                e.preventDefault();
             })
-            $('#gotop').click(function(){
+            $('#gotop').click(function(e){
                 $('html,body').animate({
                     scrollTop:0
                 })
+                // return false;
+                e.preventDefault();
             })
+            $(window).scroll(function(){
+                let h = $(this).scrollTop();
+                if(h > 800){
+                    $('#gotop').fadeIn();
+                }else{
+                    $('#gotop').fadeOut();
+                }
+            });
         })
     </script>
 </body>
