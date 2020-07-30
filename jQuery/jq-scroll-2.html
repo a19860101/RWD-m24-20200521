@@ -83,8 +83,10 @@
                 // console.log($(this).data('target'));
                 // let href = $(this).attr('href');
                 // let _offset = $(href).offset().top;
-                $('nav').find('a').removeClass('active');
-                $(this).addClass('active');
+                
+                // $('nav').find('a').removeClass('active');
+                // $(this).addClass('active');
+                
                 let target = $(this).data('target');
                 let _offset = $(target).offset().top; 
                 $('html,body').animate({
@@ -107,6 +109,16 @@
                 }else{
                     $('#gotop').fadeOut();
                 }
+                console.log(h);
+                $('nav').find('a').each(function(){
+                    let target=$(this).data('target');
+                    let _offset = $(target).offset().top;
+
+                    if(h >= _offset - 200){
+                        $('nav').find('a').removeClass('active');
+                        $(this).addClass('active');
+                    }
+                })
             });
         })
     </script>
