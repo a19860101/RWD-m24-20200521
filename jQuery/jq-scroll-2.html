@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Gill Sans MT";
+        }
+        nav {
+            background-color: #222;
+            text-align: center;
+            line-height: 50px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #eee;
+            display: inline-block;
+            margin: 0 15px;
+        }
+        #about,#service,#product,#contact{
+            height: 100vh;
+        }
+        #about {
+            background-color: #e8505b;
+        }
+        #service {
+            background-color: #f9d56e;
+        }
+        #product {
+            background-color: #14b1ab;
+        }
+        #contact {
+            background-color: #f3ecc2;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about" data-target="#about">About</a>
+        <a href="#service" data-target="#service">Service</a>
+        <a href="#product" data-target="#product">Product</a>
+        <a href="#contact" data-target="#contact">Contact</a>
+    </nav>
+    <div id="about"></div>
+    <div id="service"></div>
+    <div id="product"></div>
+    <div id="contact"></div>
+    <script>
+        $(function(){
+            $('nav').find('a').click(function(){
+                // console.log($(this).attr('href'));
+                // console.log($(this).data('target'));
+                // let href = $(this).attr('href');
+                // let _offset = $(href).offset().top;
+                
+                let target = $(this).data('target');
+                let _offset = $(target).offset().top; 
+                $('html,body').animate({
+                    scrollTop: _offset
+                })
+            })
+        })
+    </script>
+</body>
+</html>

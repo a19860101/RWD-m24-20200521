@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Gill Sans MT";
+        }
+        .container {
+            width: 600px;
+            margin: auto;
+        }
+        h2 {
+            background-color: #ddd;
+            padding: 10px 15px;
+            border-bottom: 1px solid #aaa;
+            cursor: pointer;
+            transition: .3s;
+        }
+        h2.active {
+            background-color: #f9d56e;
+        }
+        h2:hover {
+            background-color: #f9d56e;
+        }
+        p {
+            display: none;
+            background-color: #ccc;
+            padding: 15px;
+            line-height: 1.5em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>title</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti sequi asperiores magni officia soluta magnam maiores impedit ipsum ad architecto omnis tempora, aliquid eos et explicabo ipsa recusandae iusto dolor.</p>
+        <h2>title 2</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore saepe et ipsum odio dolores, consectetur eveniet rem a fugit eos placeat illum voluptas sed facere nam perspiciatis atque, in necessitatibus consequatur incidunt maxime officiis! Ipsum magni quasi veritatis impedit id. Sint, quia soluta ducimus magni vitae incidunt illum?
+        </p>
+        <h2>title 3</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consequuntur obcaecati harum? Dicta, qui corrupti nam ratione dolorem officia. Laborum, cum molestiae. Ab, vitae laudantium sapiente dolores facere ducimus assumenda autem quas. Quas, error hic aspernatur eius cupiditate impedit alias unde, amet repellat libero deserunt voluptas, quod ipsa?
+        </p>
+    </div>
+    <script>
+        $(function(){
+            $('h2').click(function(){
+                // $(this).next().toggle(600);
+                // $(this).next().fadeToggle(600);
+                $(this).toggleClass('active');
+                $(this).next().slideToggle();
+            });
+        })
+    </script>
+</body>
+</html>
