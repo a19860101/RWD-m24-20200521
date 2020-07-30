@@ -16,6 +16,8 @@
             background-color: #222;
             text-align: center;
             line-height: 50px;
+            position: fixed;
+            width: 100%;
         }
         nav a {
             text-decoration: none;
@@ -38,6 +40,20 @@
         #contact {
             background-color: #f3ecc2;
         }
+        #gotop {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            background-color: #222;
+            color: #fff;
+            text-decoration: none;
+            position: fixed;
+            right: 15px;
+            bottom: 15px;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
@@ -51,6 +67,7 @@
     <div id="service"></div>
     <div id="product"></div>
     <div id="contact"></div>
+    <a href="#" id="gotop">TOP</a>
     <script>
         $(function(){
             $('nav').find('a').click(function(){
@@ -58,11 +75,16 @@
                 // console.log($(this).data('target'));
                 // let href = $(this).attr('href');
                 // let _offset = $(href).offset().top;
-                
+
                 let target = $(this).data('target');
                 let _offset = $(target).offset().top; 
                 $('html,body').animate({
                     scrollTop: _offset
+                })
+            })
+            $('#gotop').click(function(){
+                $('html,body').animate({
+                    scrollTop:0
                 })
             })
         })
