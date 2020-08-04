@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <style>
@@ -27,11 +28,35 @@
             opacity: 1;
             transition: .3s;
         }
+        .owl-theme .owl-nav [class*=owl-] {
+            color: #0f4c75;
+            font-size: 14px;
+            margin: 5px;
+            padding: 4px 7px;
+            background: transparent;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 0px;
+        }
+        .owl-theme .owl-nav [class*=owl-]:hover {
+            background-color: transparent;
+            color: #4e93c0;
+            transition: .3s;
+        }
+        .owl-dot {
+            outline: 0;
+        }
+        .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot span {
+            background-color: #4e93c0;
+        }
+        .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+            background-color: #0f4c75;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div id="banner" class="owl-carousel">
+        <div id="banner" class="owl-carousel owl-theme">
             <img src="https://picsum.photos/id/38/1200/600" alt="">
             <img src="https://picsum.photos/id/48/1200/600" alt="">
             <img src="https://picsum.photos/id/58/1200/600" alt="">
@@ -49,7 +74,11 @@
                 loop: true,
                 // center:  true,
                 margin: 20,
-                stagePadding: 100
+                stagePadding: 100,
+                nav: true,
+                dots: true,
+                navElement:'a',
+                navText:['<i class="fas fa-chevron-circle-left fa-2x"></i>','<i class="fas fa-chevron-circle-right fa-2x"></i>'],
             })
         })
 
