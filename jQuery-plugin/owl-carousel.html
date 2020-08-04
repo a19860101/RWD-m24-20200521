@@ -9,11 +9,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         header {
-            width: 800px;
+            width: 100%;
             margin: auto;
         }
+        .owl-item {
+            opacity: .4;
+            transition: .3s;
 
+        }
+        .owl-item.active {
+            opacity: 1;
+            transition: .3s;
+        }
     </style>
 </head>
 <body>
@@ -31,9 +44,12 @@
             $('#banner').owlCarousel({
                 items: 1,
                 autoplay: true,
-                autoplaySpeed: 600,
+                autoplaySpeed: 1500,
                 autoplayTimeout: 3000,
-                loop: true
+                loop: true,
+                // center:  true,
+                margin: 20,
+                stagePadding: 100
             })
         })
 
