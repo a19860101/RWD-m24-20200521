@@ -19,6 +19,12 @@
             line-height: 50px;
             position: fixed;
             width: 100%;
+            transition: .3s;
+
+        }
+        nav.active {
+            background-color: #00bcd4;
+            transition: .3s;
         }
         nav a {
             text-decoration: none;
@@ -111,9 +117,11 @@
                 if(h > 800){
                     // $('#gotop').fadeIn();
                     $('#gotop').show().removeClass(ani+' '+ani_out).addClass(ani+' '+ani_in);
+                    $('nav').addClass('active');
                 }else{
                     // $('#gotop').fadeOut();
                     $('#gotop').removeClass(ani+' '+ani_in).addClass(ani+' '+ani_out);
+                    $('nav').removeClass('active');
                 }
                 console.log(h);
                 $('nav').find('a').each(function(){
