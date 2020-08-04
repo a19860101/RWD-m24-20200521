@@ -8,10 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <style>
+        header {
+            width: 800px;
+            margin: auto;
+        }
+
+    </style>
 </head>
 <body>
     <header>
-        <div id="banner">
+        <div id="banner" class="owl-carousel">
             <img src="https://picsum.photos/id/38/1200/600" alt="">
             <img src="https://picsum.photos/id/48/1200/600" alt="">
             <img src="https://picsum.photos/id/58/1200/600" alt="">
@@ -19,5 +26,17 @@
             <img src="https://picsum.photos/id/78/1200/600" alt="">
         </div>
     </header>
+    <script>
+        $(function(){
+            $('#banner').owlCarousel({
+                items: 1,
+                autoplay: true,
+                autoplaySpeed: 600,
+                autoplayTimeout: 3000,
+                loop: true
+            })
+        })
+
+    </script>
 </body>
 </html>
