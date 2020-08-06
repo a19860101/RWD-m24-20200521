@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            height: 100vh;
+        }
+        #second {
+            background-image: linear-gradient(to left top,#ed6663,#b52b65);
+        }
+        #fourth {
+            background-image: linear-gradient(to left top,#00b7c2,#0f4c75);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="first" data-image-src="images/001.jpg" data-parallax="scroll"></div>
+    <div class="container" id="second"></div>
+    <div class="container" id="third" data-image-src="https://picsum.photos/id/93/1600/800" data-parallax="scroll"></div>
+    <div class="container" id="fourth"></div>
+</body>
+</html>
