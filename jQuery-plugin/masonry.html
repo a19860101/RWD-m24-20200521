@@ -12,21 +12,27 @@
             font-family: "Segoe UI";
             box-sizing: border-box;
         }
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
         .container {
             /* width: 1040px; */
             margin: auto;
         }
         .box {
             width: 250px;
-            border: 1px solid #000;
-            padding: 15px;
+            /* border: 1px solid #000; */
+            /* padding: 15px; */
             margin: 5px;
         }
     </style>
     <script>
         $(function(){
-            $('.container').masonry({
-                isFitWidth: true
+            $('.container').imagesLoaded(function(){
+                $('.container').masonry({
+                    isFitWidth: true
+                });
             });
         })
     </script>
@@ -34,76 +40,88 @@
 <body>
     <div class="container">
         <div class="box">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore id ad temporibus officia perspiciatis porro voluptates autem distinctio! Blanditiis et provident excepturi ex minus quo natus sed, quis nulla asperiores.
+            <img src="https://picsum.photos/id/54/800/600" alt="">
         </div>
         <div class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti autem pariatur, hic ad natus repellat alias repudiandae laudantium facere error libero corporis quisquam mollitia nisi temporibus architecto possimus rem. Voluptatum in ex iusto pariatur cupiditate dolorem qui dolorum! Animi commodi, quisquam atque non deserunt iste repellendus impedit explicabo assumenda dignissimos.
+            <img src="https://picsum.photos/id/154/600/600" alt="">
         </div>
         <div class="box">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aut ipsum blanditiis praesentium id necessitatibus repellat non optio esse, ullam omnis ducimus iure provident accusantium, neque perferendis sequi quisquam amet expedita incidunt beatae! Neque deserunt sunt est placeat molestias quaerat sapiente laudantium sint quisquam, vero dolor ipsa quis quas, excepturi labore consequatur eligendi temporibus quam quod harum quasi ratione. Sunt?
+            <img src="https://picsum.photos/id/64/600/1200" alt="">
         </div>
         <div class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident libero nisi vitae iste assumenda magnam tempora delectus suscipit iure qui asperiores maxime, adipisci eum?
+            <img src="https://picsum.photos/id/34/1200/600" alt="">
         </div>
         <div class="box">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam labore amet quis, veritatis hic nobis delectus. Ab rerum vel, accusamus, repellendus harum eum repudiandae fugit ipsum sunt veritatis necessitatibus unde!
+            <img src="https://picsum.photos/id/15/600/800" alt="">
         </div>
         <div class="box">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum eos delectus omnis, fuga molestias enim illo iusto eligendi sapiente rerum sint obcaecati sed modi doloribus vel, asperiores eum! Minima totam doloremque odit non, laudantium sint qui eos ad, quas incidunt vel accusamus tenetur consequatur velit repellat aliquid rem dolorum at sed eveniet officia et culpa! Accusamus, ducimus nostrum?
+            <img src="https://picsum.photos/id/26/1024/800" alt="">
         </div>
         <div class="box">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore id ad temporibus officia perspiciatis porro voluptates autem distinctio! Blanditiis et provident excepturi ex minus quo natus sed, quis nulla asperiores.
+            <img src="https://picsum.photos/id/96/680/800" alt="">
         </div>
         <div class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti autem pariatur, hic ad natus repellat alias repudiandae laudantium facere error libero corporis quisquam mollitia nisi temporibus architecto possimus rem. Voluptatum in ex iusto pariatur cupiditate dolorem qui dolorum! Animi commodi, quisquam atque non deserunt iste repellendus impedit explicabo assumenda dignissimos.
+            <img src="https://picsum.photos/id/54/800/600" alt="">
         </div>
         <div class="box">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aut ipsum blanditiis praesentium id necessitatibus repellat non optio esse, ullam omnis ducimus iure provident accusantium, neque perferendis sequi quisquam amet expedita incidunt beatae! Neque deserunt sunt est placeat molestias quaerat sapiente laudantium sint quisquam, vero dolor ipsa quis quas, excepturi labore consequatur eligendi temporibus quam quod harum quasi ratione. Sunt?
+            <img src="https://picsum.photos/id/154/600/600" alt="">
         </div>
         <div class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident libero nisi vitae iste assumenda magnam tempora delectus suscipit iure qui asperiores maxime, adipisci eum?
+            <img src="https://picsum.photos/id/64/600/1200" alt="">
         </div>
         <div class="box">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam labore amet quis, veritatis hic nobis delectus. Ab rerum vel, accusamus, repellendus harum eum repudiandae fugit ipsum sunt veritatis necessitatibus unde!
+            <img src="https://picsum.photos/id/64/1200/600" alt="">
         </div>
         <div class="box">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum eos delectus omnis, fuga molestias enim illo iusto eligendi sapiente rerum sint obcaecati sed modi doloribus vel, asperiores eum! Minima totam doloremque odit non, laudantium sint qui eos ad, quas incidunt vel accusamus tenetur consequatur velit repellat aliquid rem dolorum at sed eveniet officia et culpa! Accusamus, ducimus nostrum?
+            <img src="https://picsum.photos/id/15/600/800" alt="">
         </div>
         <div class="box">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore id ad temporibus officia perspiciatis porro voluptates autem distinctio! Blanditiis et provident excepturi ex minus quo natus sed, quis nulla asperiores.
+            <img src="https://picsum.photos/id/26/1024/800" alt="">
         </div>
         <div class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti autem pariatur, hic ad natus repellat alias repudiandae laudantium facere error libero corporis quisquam mollitia nisi temporibus architecto possimus rem. Voluptatum in ex iusto pariatur cupiditate dolorem qui dolorum! Animi commodi, quisquam atque non deserunt iste repellendus impedit explicabo assumenda dignissimos.
+            <img src="https://picsum.photos/id/96/680/800" alt="">
         </div>
         <div class="box">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aut ipsum blanditiis praesentium id necessitatibus repellat non optio esse, ullam omnis ducimus iure provident accusantium, neque perferendis sequi quisquam amet expedita incidunt beatae! Neque deserunt sunt est placeat molestias quaerat sapiente laudantium sint quisquam, vero dolor ipsa quis quas, excepturi labore consequatur eligendi temporibus quam quod harum quasi ratione. Sunt?
+            <img src="https://picsum.photos/id/54/800/600" alt="">
         </div>
         <div class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident libero nisi vitae iste assumenda magnam tempora delectus suscipit iure qui asperiores maxime, adipisci eum?
+            <img src="https://picsum.photos/id/154/600/600" alt="">
         </div>
         <div class="box">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam labore amet quis, veritatis hic nobis delectus. Ab rerum vel, accusamus, repellendus harum eum repudiandae fugit ipsum sunt veritatis necessitatibus unde!
+            <img src="https://picsum.photos/id/64/600/1200" alt="">
         </div>
         <div class="box">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum eos delectus omnis, fuga molestias enim illo iusto eligendi sapiente rerum sint obcaecati sed modi doloribus vel, asperiores eum! Minima totam doloremque odit non, laudantium sint qui eos ad, quas incidunt vel accusamus tenetur consequatur velit repellat aliquid rem dolorum at sed eveniet officia et culpa! Accusamus, ducimus nostrum?
+            <img src="https://picsum.photos/id/64/1200/600" alt="">
         </div>
         <div class="box">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore id ad temporibus officia perspiciatis porro voluptates autem distinctio! Blanditiis et provident excepturi ex minus quo natus sed, quis nulla asperiores.
+            <img src="https://picsum.photos/id/15/600/800" alt="">
         </div>
         <div class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti autem pariatur, hic ad natus repellat alias repudiandae laudantium facere error libero corporis quisquam mollitia nisi temporibus architecto possimus rem. Voluptatum in ex iusto pariatur cupiditate dolorem qui dolorum! Animi commodi, quisquam atque non deserunt iste repellendus impedit explicabo assumenda dignissimos.
+            <img src="https://picsum.photos/id/26/1024/800" alt="">
         </div>
         <div class="box">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aut ipsum blanditiis praesentium id necessitatibus repellat non optio esse, ullam omnis ducimus iure provident accusantium, neque perferendis sequi quisquam amet expedita incidunt beatae! Neque deserunt sunt est placeat molestias quaerat sapiente laudantium sint quisquam, vero dolor ipsa quis quas, excepturi labore consequatur eligendi temporibus quam quod harum quasi ratione. Sunt?
+            <img src="https://picsum.photos/id/96/680/800" alt="">
         </div>
         <div class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident libero nisi vitae iste assumenda magnam tempora delectus suscipit iure qui asperiores maxime, adipisci eum?
+            <img src="https://picsum.photos/id/54/800/600" alt="">
         </div>
         <div class="box">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam labore amet quis, veritatis hic nobis delectus. Ab rerum vel, accusamus, repellendus harum eum repudiandae fugit ipsum sunt veritatis necessitatibus unde!
+            <img src="https://picsum.photos/id/154/600/600" alt="">
         </div>
         <div class="box">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum eos delectus omnis, fuga molestias enim illo iusto eligendi sapiente rerum sint obcaecati sed modi doloribus vel, asperiores eum! Minima totam doloremque odit non, laudantium sint qui eos ad, quas incidunt vel accusamus tenetur consequatur velit repellat aliquid rem dolorum at sed eveniet officia et culpa! Accusamus, ducimus nostrum?
+            <img src="https://picsum.photos/id/64/600/1200" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/64/1200/600" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/15/600/800" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/26/1024/800" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/96/680/800" alt="">
         </div>
     </div>
 </body>
