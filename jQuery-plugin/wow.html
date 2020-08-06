@@ -12,6 +12,9 @@
         img {
             vertical-align: top;
         }
+        header {
+            height: 100vh;
+        }
         .full-width .row{
             height: 100vh;
             align-items: center;
@@ -25,19 +28,19 @@
     <div class="full-width" style="background:#ffd5cd">
         <div class="fixed-width">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 wow fadeInUp" data-wow-delay="0s">
                     <h2>title</h2>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, magnam omnis non ex commodi, deleniti necessitatibus perspiciatis perferendis aperiam, eum itaque dicta rerum sunt cumque. Quis doloribus quam non harum!
                     </p>
                 </div>
-                <div class="col-4">
+                <div class="col-4 wow fadeInUp" data-wow-delay="0.5s">
                     <h2>title</h2>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, magnam omnis non ex commodi, deleniti necessitatibus perspiciatis perferendis aperiam, eum itaque dicta rerum sunt cumque. Quis doloribus quam non harum!
                     </p>
                 </div>
-                <div class="col-4">
+                <div class="col-4 wow fadeInUp" data-wow-delay="1s">
                     <h2>title</h2>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, magnam omnis non ex commodi, deleniti necessitatibus perspiciatis perferendis aperiam, eum itaque dicta rerum sunt cumque. Quis doloribus quam non harum!
@@ -49,16 +52,16 @@
     <div class="full-width" style="background:#c3aed6">
         <div class="fixed-width">
             <div class="row">
-                <div class="col-3">
+                <div class="col-3 wow fadeInDown" data-wow-offset="100" data-wow-delay="0s">
                     <img src="https://picsum.photos/id/6/600" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-3 wow fadeInDown" data-wow-offset="100" data-wow-delay="0.3s">
                     <img src="https://picsum.photos/id/42/600" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-3 wow fadeInDown" data-wow-offset="100" data-wow-delay="0.6s">
                     <img src="https://picsum.photos/id/26/600" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-3 wow fadeInDown" data-wow-offset="100" data-wow-delay="0.9s">
                     <img src="https://picsum.photos/id/85/600" alt="">
                 </div>
             </div>
@@ -67,25 +70,25 @@
     <div class="full-width" style="background:#efbbcf">
         <div class="fixed-width">
             <div class="row">
-                <div class="col-3">
+                <div class="col-3 wow zoomIn">
                     <img src="https://picsum.photos/id/6/600/300" alt="">
                     <h2>title</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, beatae.</p>
                     <a href="#">link</a>
                 </div>
-                <div class="col-3">
+                <div class="col-3 wow zoomIn">
                     <img src="https://picsum.photos/id/6/600/300" alt="">
                     <h2>title</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, beatae.</p>
                     <a href="#">link</a>
                 </div>
-                <div class="col-3">
+                <div class="col-3 wow zoomIn">
                     <img src="https://picsum.photos/id/6/600/300" alt="">
                     <h2>title</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, beatae.</p>
                     <a href="#">link</a>
                 </div>
-                <div class="col-3">
+                <div class="col-3 wow zoomIn">
                     <img src="https://picsum.photos/id/6/600/300" alt="">
                     <h2>title</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, beatae.</p>
@@ -94,5 +97,8 @@
             </div>
         </div>
     </div>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
