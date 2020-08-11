@@ -15,9 +15,9 @@
                 dataType: 'json',
                 success:function(e){
                     console.log(e);
-                    e.forEach(function(data){
-                        // console.log(data.author);
-                        console.log(data.download_url);
+                    e.forEach(function({author,download_url}){
+                        console.log(author);
+                        console.log(download_url);
                     })
                 },
                 error:function(){

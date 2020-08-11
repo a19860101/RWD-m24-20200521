@@ -17,10 +17,10 @@
                 url: 'data.json',
                 dataType: 'json',
                 success: function(e){
-                    e.forEach(function({data}){
+                    e.forEach(function({name,price}){
                         const content = `
                             <li>
-                                ${data.name}--價格:${data.price}元    
+                                ${name}--價格:${price}元    
                             </li>                            
                         `;
                         $('.drinks').append(content);

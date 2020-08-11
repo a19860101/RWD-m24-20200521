@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //物件解構
+        const obj = {
+            name: 'john',
+            mail: 'asdf@gmail.com',
+            gender: 'male'
+        }
+        // const {name,mail} = obj; 
+        // console.log(name);
+        // console.log(mail);
+        const {name:_name,mail:_mail} = obj;
+        console.log(_name);
+        console.log(_mail);
+    </script>
+</body>
+</html>
