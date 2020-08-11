@@ -8,13 +8,23 @@
 
 </head>
 <body>
+    <div class="container">
+        <ul class="drinks"></ul>
+    </div>
     <script>
         $(function(){
             $.ajax({
                 url: 'data.json',
                 dataType: 'json',
                 success: function(e){
-                    console.log(e);
+                    e.forEach(function(data){
+                        const content = `
+                            <li>
+                                ${data.name}--價格:${data.price}元    
+                            </li>                            
+                        `;
+                        $('.drinks').append(content);
+                    })
                 },
                 error: function(){
                     console.log('error');
