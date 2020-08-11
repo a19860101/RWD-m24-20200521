@@ -9,30 +9,31 @@
         $(function(){
             $('#city').change(function(){
                 let city = $(this).val();
-                console.log(city);
+                $('.container').empty();
+                $.ajax({
+                    url: 'https://api.openweathermap.org/data/2.5/weather',
+                    data:{
+                        q:city,
+                        appid: 'b1ecbccd638b763d489602917ba47cc3',
+                        units: 'metric',
+                        lang: 'zh_TW'
+                    },
+                    dataType:'json',
+                    success:function(e){
+                        console.log(e);
+                        const content = `
+                            <div>
+                                <div>今日天氣:${e.weather[0].description}</div>
+                                <div>最高溫${e.main.temp_max}&deg; ,最低溫${e.main.temp_min}&deg;</div>
+                                <div>體感溫度${e.main.feels_like}&deg;</div>
+                            </div>
+                        `;
+                        $('.container').append(content);
+                    },
+                    error:function(){}
+                })
             })
-            $.ajax({
-                url: 'https://api.openweathermap.org/data/2.5/weather',
-                data:{
-                    q:'Tokyo',
-                    appid: 'b1ecbccd638b763d489602917ba47cc3',
-                    units: 'metric',
-                    lang: 'zh_TW'
-                },
-                dataType:'json',
-                success:function(e){
-                    console.log(e);
-                    const content = `
-                        <div>
-                            <div>今日天氣:${e.weather[0].description}</div>
-                            <div>最高溫${e.main.temp_max}&deg; ,最低溫${e.main.temp_min}&deg;</div>
-                            <div>體感溫度${e.main.feels_like}&deg;</div>
-                        </div>
-                    `;
-                    $('.container').append(content);
-                },
-                error:function(){}
-            })
+           
         })
     </script>
 </head>
