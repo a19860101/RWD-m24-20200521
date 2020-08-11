@@ -17,7 +17,7 @@
                 url: 'data.json',
                 dataType: 'json',
                 success: function(e){
-                    e.forEach(function(data){
+                    e.forEach(function({data}){
                         const content = `
                             <li>
                                 ${data.name}--價格:${data.price}元    
