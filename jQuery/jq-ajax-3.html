@@ -10,6 +10,10 @@
             $('#city').change(function(){
                 let city = $(this).val();
                 $('.container').empty();
+                getWeather(city);
+            })
+           
+            function getWeather(city){
                 $.ajax({
                     url: 'https://api.openweathermap.org/data/2.5/weather',
                     data:{
@@ -20,7 +24,6 @@
                     },
                     dataType:'json',
                     success:function(e){
-                        console.log(e);
                         const content = `
                             <div>
                                 <div>今日天氣:${e.weather[0].description}</div>
@@ -30,15 +33,17 @@
                         `;
                         $('.container').append(content);
                     },
-                    error:function(){}
+                    error:function(){
+                        return 'error';
+                    }
                 })
-            })
-           
+            }
         })
     </script>
 </head>
 <body>
     <select name="" id="city">
+        <option>--請選擇--</option>
         <option value="Taipei">台北</option>
         <option value="Tokyo"">東京</option>
         <option value="Bangkok">曼谷</option>
