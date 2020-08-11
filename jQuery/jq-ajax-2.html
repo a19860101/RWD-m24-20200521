@@ -5,19 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI";
+        }
+        img {
+            vertical-align: top;
+            width: 100%;
+        }
+        .container {
+            margin: auto;
+        }
+        .box {
+            width: 200px;
+        }
 
+    </style>
 </head>
 <body>
+    <div class="container">
+
+    </div>
     <script>
         $(function(){
+            
             $.ajax({
                 url: 'https://picsum.photos/v2/list',
                 dataType: 'json',
                 success:function(e){
                     console.log(e);
                     e.forEach(function({author,download_url}){
-                        console.log(author);
-                        console.log(download_url);
+                        const content = `
+                            <div class="box">
+                                <div><img src="${download_url}"></div>
+                            </div>
+                        `;
+                        $('.container').append(content);
+                    })
+                    $('.container').imagesLoaded(function(){
+                        $('.container').masonry({
+                            isFitWidth: true
+                        })
                     })
                 },
                 error:function(){
