@@ -22,7 +22,7 @@
             margin: auto;
         }
         .box {
-            width: 200px;
+            width: 400px;
         }
 
     </style>
@@ -33,9 +33,11 @@
     </div>
     <script>
         $(function(){
-            
             $.ajax({
                 url: 'https://picsum.photos/v2/list',
+                data:{
+                    limit: 100
+                },
                 dataType: 'json',
                 success:function(e){
                     console.log(e);
