@@ -7,10 +7,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(function(){
+            $('#city').change(function(){
+                let city = $(this).val();
+                console.log(city);
+            })
             $.ajax({
                 url: 'https://api.openweathermap.org/data/2.5/weather',
                 data:{
-                    q:'Taipei',
+                    q:'Tokyo',
                     appid: 'b1ecbccd638b763d489602917ba47cc3',
                     units: 'metric',
                     lang: 'zh_TW'
@@ -33,6 +37,12 @@
     </script>
 </head>
 <body>
+    <select name="" id="city">
+        <option value="Taipei">台北</option>
+        <option value="Tokyo"">東京</option>
+        <option value="Bangkok">曼谷</option>
+        <option value="Seoul"">首爾</option>
+    </select>
     <div class="container">
 
     </div>
